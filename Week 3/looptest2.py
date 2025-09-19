@@ -63,17 +63,62 @@
 
 #Here is an example of a 'flag'.
 
-done = False
-total = 0
-user_num = ""
+# done = False
+# total = 0
+# user_num = ""
 
-while not done:
-    user_num = input("enter a number or type q to end: ")
-    if user_num != "q":
-        total += int(user_num)
-    else:
-        done = True
+# while not done:
+#     user_num = input("enter a number or type q to end: ")
+#     if user_num != "q":
+#         total += int(user_num)
+#     else:
+#         done = True
 
-print(f"Total = {total}")
+# print(f"Total = {total}")
+# Python follows duck typing, ie: if it walks and talks like a duck, it is a duck.
+
+# Print the numbers 1-10
+
+# for number in range(1,11):
+#     print(number)
+
+# # print even numbers one thru ten
+
+# for number in range(2,11,2):
+#     print(number)
+
+# Print all the odd numbers between 5 and some user given upper bound inclsively.
+
+# user_num = int(input(""))
+# for number in range(5,user_num+1,2):
+#     print(number)
+
+
+# Find the sum of user entered values until the user types q for done.
+# Indeterminate range => while loop
+
+# "m" + "a" outputs "ma"
+# This is called string concatonation
+# "6" + "7" + "8" outputs "678"
+# A string is called a collection data type-- it is a collection of data. m is data, a is data.
+
+# x = "hello world"
+# print(x[8])
+
+# x = "hello world"
+# print(x[2:8])
+
+word = "hello world"
+for letter in word:
+    print(letter)
+
+x = "123"
+for number in x:
+    print(number)
+
+
+
+
+
 
 
