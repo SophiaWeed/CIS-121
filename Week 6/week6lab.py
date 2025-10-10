@@ -1,3 +1,4 @@
+'''
 def hailstone(n):
     hailstone_list = []
     while n > 1:
@@ -30,21 +31,28 @@ cards = [2, 8, "k"]
 
 blackjack_score(cards)
 
+'''
+
 
 def is_acronym(s,words):
     combined_letters = ""
-    # if s == first letters of words concatonated return true
+
     if len(s) != len(words):
         return False
-    else:
-        for word in words:
-            if word == "":
-                return False
-            first_letter = word[0]
-            combined_letters += first_letter
-        if combined_letters != s:
+    
+    for word in words:
+        print(word)
+        if word == "":
             return False
-        return True
+        
+        first_letter = word[0]
+        combined_letters += first_letter
+
+    if combined_letters != s:
+        return False
+        
+    return True
+        
         
 words = ["the", "fuck's", "sake"]
 s = "tfs"
