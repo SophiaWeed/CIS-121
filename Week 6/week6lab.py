@@ -1,4 +1,4 @@
-'''
+
 def hailstone(n):
     hailstone_list = []
     while n > 1:
@@ -31,7 +31,7 @@ cards = [2, 8, "k"]
 
 blackjack_score(cards)
 
-'''
+
 
 
 def is_acronym(s,words):
@@ -63,5 +63,15 @@ print(is_acronym(s,words))
 # compare the length of the strin and words
 # first_letter = word[0]
 
-
+def like_or_dislike(events):
+    index = 0
+    outcome = ""
+    while index <= len(events)-1:
+        if events[index] == outcome:
+            outcome = "nothing"
+        elif events[index] != outcome:
+            outcome = events[index]
+        index += 1
+    return outcome
+print(like_or_dislike())
         
