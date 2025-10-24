@@ -45,9 +45,26 @@ def string_to_list_with_vowels(word):
         else: 
             built_word += letter
             if letter in "aeiou":
-                vowel_count += 1
-
-        
+                vowel_count += 1  
     return words
 
 print(string_to_list_with_vowels(my_word))
+
+therapist_dict = {"first_name": "Ben", "last_name": "West", "birthday": "01/17"}
+
+new_key = input("")
+new_value= input("")
+therapist_dict[new_key] = new_value
+
+print(f"first_name: {therapist_dict['first_name']}")
+print(f"last_name: {therapist_dict['last_name']}")
+print(f"birthday: {therapist_dict['birthday']}")
+print(f"{new_key}: {therapist_dict[new_key]}")
+
+scores = {}
+
+student_name = input("")
+score_list = [60.5,65.5,85.5]
+scores[student_name] = score_list
+
+print(f"{student_name}: {scores[student_name]}")

@@ -34,7 +34,7 @@ def find_oldest(people):
     oldest_name = ""
     for name in people:
         if people[name] > oldest_age:
-            oldest_age = people[key]
+            oldest_age = people[name]
             oldest_name = name
         return oldest_name
 
