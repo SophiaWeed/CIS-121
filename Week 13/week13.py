@@ -26,7 +26,7 @@ except TypeError:
 
 # Then we try to break the code.
 # We try to anticipate everything that the user could enter that would make the program crash.
-'''print("Program start")
+print("Program start")
 try:
     age = int(input("Enter your age: "))
     print(f"Your age is {age}.")
@@ -34,7 +34,7 @@ try:
 except ValueError:
     print("value error: you must pick an integer age.")
 
-print("program ended normally")'''
+print("program ended normally")
 
 
 print("Enter a number to divide ten by. ")
